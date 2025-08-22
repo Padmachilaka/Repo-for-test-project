@@ -1,0 +1,23 @@
+<apex:component controller="AccountEmailTemplate" access="global" >
+    <apex:attribute name="AccId" type="Id" description="Id of the account" assignTo="{!accountId}"/>
+      <table border = "1" cellspacing = "1">
+          
+          <tr>
+              <td>FirstName</td>
+              <td>LastName</td>
+              <td>Title</td>
+              <td>Email</td>
+              <td>Phone</td>
+          </tr>
+          <apex:repeat value="{!ContactList}" var="con">
+          <tr>
+              <td>{!con.FirstName}</td>
+              <td>{!con.LastName}</td>
+              <td>{!con.Title}</td>
+             <td>{!con.Email}</td>
+              <td>{!con.Phone}</td>
+              
+              </tr>
+          </apex:repeat>
+    </table>
+</apex:component>

@@ -1,0 +1,9 @@
+<apex:page standardController="Account">
+<h1> Edit Account Record</h1>
+<apex:form >
+AccountName:<apex:inputField value="{!Account.Name}"/>
+Industry"<apex:inputField label="Industry" value="{!Account.Industry}"/>
+Phone<apex:inputField label="Phone" value="{!Account.Phone}"/>
+<apex:commandButton action="{!SAVE}" value="Save Record"/>
+</apex:form>
+</apex:page>

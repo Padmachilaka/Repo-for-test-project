@@ -1,0 +1,48 @@
+<apex:page standardController="contact" recordSetVar="items" sidebar="false">
+    <apex:form >
+        <style>
+           .One
+             {
+            margin:20px;
+            padding:10px;
+            width:150px;
+            height:100px;
+            baclground-color:blue;
+            border-radius:20px;
+            border:2px solod red;
+             }
+            .outer
+             {
+            margin:10px;
+            padding:10px;
+            width:250px;
+            height:500px;
+            baclground-color:red;
+             }
+            .recent
+             {
+              margin:2px;
+              padding:3px;
+              width:150px;
+              height:10px;
+              baclground-color:green;
+             }     
+        </style>
+        <div>
+            <div class="recent" >
+                <apex:outputLabel style="font-size:20px"> Recent Items
+                </apex:outputLabel>
+            </div>
+            <div class="One">
+                <apex:dataTable value="{!items}" var="a" rows="5" first="3">
+              
+              <apex:column >
+                  <apex:image url="https://tutorialkart-dev-ed--tutorialkart.ap4.visual.force.com/resource/1505707588000/tutorialkart__image"
+                              style="width:10px;height:10px;padding:5px;float:left;"/>
+                  <apex:commandLink value="{!a.name}" action="{a.id}"/>
+              </apex:column>   
+                 </apex:dataTable>
+            </div>
+        </div>        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page standardController="Contact">
+<h1> Edit Contact Record</h1>
+<apex:form >
+ContactName<apex:inputField value="{!Contact.Name}"/>
+Email<apex:inputField label="Email" value="{!Contact.Email}"/>
+Phone<apex:inputField label="Phone" value="{!Contact.Phone}"/>
+<apex:commandButton action="{!SAVE}" value="Save Record"/>
+</apex:form>
+</apex:page>
