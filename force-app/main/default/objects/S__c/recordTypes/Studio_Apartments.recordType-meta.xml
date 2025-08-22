@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Studio_Apartments</fullName>
+    <active>true</active>
+    <label>Studio Apartments</label>
+    <picklistValues>
+        <picklist>Rent__c</picklist>
+        <values>
+            <fullName>Above 30k%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equals 20-25k</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>1BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2BHK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3BHK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
